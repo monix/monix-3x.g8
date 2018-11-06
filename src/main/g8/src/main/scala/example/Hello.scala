@@ -9,7 +9,7 @@ object Hello extends TaskApp {
   def run(args: List[String]): Task[ExitCode] =
     args.headOption match {
       case Some(name) =>
-        Task(println(s"Hello, ${name}.")).as(ExitCode.Success)
+        Task(println(s"Hello, \${name}.")).as(ExitCode.Success)
       case None =>
         Task(System.err.println("Usage: Hello name")).as(ExitCode(2))
     }
