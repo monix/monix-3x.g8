@@ -1,5 +1,4 @@
-import Dependencies._
-
+/** [[https://monix.io]] */
 val MonixVersion = "$monix_version$"
 
 lazy val root = (project in file(".")).
