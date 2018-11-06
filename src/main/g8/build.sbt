@@ -11,7 +11,6 @@ lazy val root = (project in file(".")).
     )),
     name := "$name$",
     libraryDependencies ++= Seq(
-      "io.monix" %% "monix" % MonixVersion,
-      scalaTest % Test
+      "io.monix" %% "monix" % MonixVersion
     )
   )
